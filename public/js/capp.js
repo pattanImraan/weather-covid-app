@@ -1,4 +1,4 @@
-console.log("client side js")
+// console.log("client side js")
 function fun(){
     document.getElementById('in').innerHTML=""
     var name=document.getElementById('fname').value
@@ -12,7 +12,7 @@ function fun(){
         
         fetch(url).then((cres)=>{
             cres.json().then((data)=>{
-                console.log(data)
+                // console.log(data)
                 if(data.e){
                     s=data.e
                     document.getElementById('fname').value=""
@@ -50,7 +50,7 @@ function covidFun(){
         active=data.totalInfected-data.recovered-data.deceased
         s='<b>Region : '+data.region+'</b><br><br>Last_Updated : '+cov.lastUpdatedAtApify+'<br><br>Total_Infected : '+data.totalInfected+'<br><br>Recovered : '+data.recovered+'<br><br>Deaths : '+data.deceased+'<br><br><b>Present_Active_Cases : '+active+'</b>'
         document.getElementById('in').innerHTML='<div class="formcontainer"><p>'+s+'</p></div>'
-        console.log(data) 
+        // console.log(data) 
         })
     }) 
     }
@@ -59,7 +59,7 @@ function covidFun(){
         active=data.totalInfected-data.recovered-data.deceased
         s='<b>Region : '+data.region+'</b><br><br>Last_Updated : '+cov.lastUpdatedAtApify+'<br><br>Total_Infected : '+data.totalInfected+'<br><br>Recovered : '+data.recovered+'<br><br>Deaths : '+data.deceased+'<br><br><b>Present_Active_Cases : '+active+'</b>'
         document.getElementById('in').innerHTML='<div class="formcontainer"><p>'+s+'</p></div>'
-        console.log(cov)
+        // console.log(cov)
     }
 }
 
