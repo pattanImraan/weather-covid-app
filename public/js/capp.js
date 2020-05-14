@@ -8,7 +8,7 @@ function fun(){
     else{
         document.getElementById('in').innerHTML=""
         document.getElementById('in').innerHTML="<div class='loader'>Loading...</div>"
-        var url='http://127.0.0.1:3000/weather?search='+name
+        var url='/weather?search='+name
         
         fetch(url).then((cres)=>{
             cres.json().then((data)=>{
