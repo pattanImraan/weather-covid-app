@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Covid-19</title>
+
+    <link rel="icon" href="/img/pic2.png">
+</head>
+
+<body>
+    <div class="main-flex">
+
+        {{> header}}
+        <br>
+        <img src="/img/pic3.jpg">
+        <h1>Covid-19 info</h1>
+        <p>This page displays the information about Covid cases in India and also gives you details about each and every
+            state. </p>
+
+        <div class="formcontainer">
+            <form>
+                <select id="country" name="i">
+                    <option value=1>Andhra Pradesh</option>
+                    <option value=28>Telangana</option>
+                    <option value=0>Andaman and Nicobar Islands</option>
+                    <option value=2>Arunachal Pradesh</option>
+                    <option value=3>Assam</option>
+                    <option value=4>Bihar</option>
+                    <option value=5>Chandigarh</option>
+                    <option value=6>Chhattisgarh</option>
+                    <option value=7>Dadar and Nagar Haveli</option>
+                    <option value=8>Delhi</option>
+                    <option value=9>Goa</option>
+                    <option value=10>Gujarat</option>                
+                    <option value=11>Haryana</option>
+                    <option value=12>Himachal Pradesh</option>
+                    <option value=13>Jammu and Kashmir</option>
+                    <option value=14>Jharkhand</option>
+                    <option value=15>Karnataka</option>
+                    <option value=16>Kerala</option>
+                    <option value=17>Ladakh</option>
+                    <option value=18>Madhya Pradesh</option>
+                    <option value=19>Maharashtra</option>
+                    <option value=20>Manipur</option>
+                    <option value=21>Meghalaya</option>
+                    <option value=22>Mizoram</option>
+                    <option value=23>Odisha</option>
+                    <option value=24>Puducherry</option>
+                    <option value=25>Punjab</option>
+                    <option value=26>Rajasthan</option>
+                    <option value=27>Tamil Nadu</option>
+                    <option value=29>Tripura</option>
+                    <option value=31>Uttar Pradesh</option>
+                    <option value=30>Uttarakhand</option>
+                    <option value=32>West Bengal</option>
+                </select>
+                <input type="button" value="Search" onclick="covidFun()">
+            </form>
+        
+      </div>
+      <br>
+        <div id="in">
+      
+        </div>
+
+        <p id="e" style="color:rgb(228, 79, 42);"></p>
+        <p id='f'></p>
+    </div>
+
+    {{>footer}}
+    <script src="/js/capp.js"></Script>
+</body>
+
+</html>
